@@ -10,12 +10,12 @@ numbers = string.digits
 symbols = string.punctuation
 
 # Combine Data
-all = lower + upper + numbers + symbols
+all_data = lower + upper + numbers + symbols
 
 # Use random on data
-temp = random.sample(all,length)
+temp = random.sample(all_data,length)
 
 # Create password
 password = ''.join(temp)
 
-print(password)
+print("You're generated password is: " + password)
